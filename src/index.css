@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+}
+body,
+input,
+select,
+button,
+textarea {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #ff8000;
+}
+header {
+  grid-area: header;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.main {
+  grid-area: main;
+}
+main button{
+  margin: 20px;
+
+}
+footer {
+  grid-area: footer;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main {
+  flex: 3 60rem;
+}
+
+
+.sidebar {
+  flex: 1 20rem;
+}
+
+/* products */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width:100%;
+  list-style-type: none;
+}
+.products li {
+  flex: 0 1 3rem;
+  height: 30rem;
+  padding: 1rem;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  padding: 5px 5px 5px 5px;
+  border: 5px solid #f3e8e8;
+  background-color:burlywood;
+}
+
+.product img{
+ 
+    border-radius: 50%;
+    border: 2px solid #f3e8e8;
+    
+   
+}
+.product div{
+    flex-direction: row;
+}
+
+.product p{
+  font-size: 13px;
+    display: flex;
+    flex-direction: row;
+
+}
+.prod-image{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.prod-image div{
+
+  padding-left: 12px;
+  padding-top: 12px;
+  color: #ffffff;
+
+
+}
+
+.user-contact{
+  padding: 2px 2px 2px 2px;
+  margin:2px;
+ background-color: beige;
+}
